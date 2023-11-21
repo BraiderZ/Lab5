@@ -8,10 +8,4 @@ class OpenCVImageProcessor(ImageProcessor):
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
-    def procesar(self, image_path):
-
-        # Agregar logica de funcion procesar()
-
-
-        pass
 
