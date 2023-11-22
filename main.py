@@ -18,15 +18,17 @@ class ProcesamientoImagenes:
 
     def procesar(self):
         if self.args.biblioteca == 'OpenCV':
-            from opencv_processor import mostrar_imagen
+            from opencv_processor import OpenCVImageProcessor
+            image_procesor = OpenCVImageProcessor()
         elif self.args.biblioteca == 'Matplotlib':
-            from matplotlib_processor import mostrar_imagen
+            from matplotlib_processor import MatplotlibImageProcessor
+            image_procesor = MatplotlibImageProcessor()
         else:
             print("Biblioteca no valida. Selecciona PIL, Matplotlib o OpenCV.")
             return
 
         try:
-            mostrar_imagen(self.args.imagen)
+            image_procesor.mostrar_imagen(self.args.imagen)
         except Exception as e:
             print(f"Error al procesar la imagen: {e}")
 
