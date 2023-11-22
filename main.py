@@ -17,14 +17,14 @@ class ArgumentParser:
         """Define los argumentos pasados al script (biblioteca y ruta de la imagen).
             Incluye strings de ayuda para indicar que se debe colocar en cada argumento. 
         """
-        
+
         # Los argumentos deben seguir la sintaxis:
         # --biblioteca <OpenCV o Matplotlib> --imagen <ruta de la imagen> 
         self.parser.add_argument("--biblioteca", choices=["Matplotlib", "OpenCV"], required=True, help="Biblioteca para procesamiento de imagenes")
         self.parser.add_argument("--imagen", required=True, help="Ruta de la imagen a procesar")
 
     def parse_args(self):
-        """Realziza el procesamiento de los argumentos.
+        """Realiza el procesamiento de los argumentos.
 
         Returns:
             args: Los argumentos procesados. 
