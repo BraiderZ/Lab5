@@ -8,7 +8,10 @@ Roger Daniel Piovet García - C15990
 Uso del progarma:
 
 - Primeramente, instale las dependencias utilizadas en el programa.
-- EL usuario tendra la la oportunidad de elegir entre dos blibiotecas para abrir y hacer display a la imagen: Matplotlib y OpenCV.
+- EL usuario tendra la la oportunidad de elegir entre dos blibiotecas para abrir y hacer display a la imagen:
+	-pip install argparse
+	-pip install matplotlib
+	-pip install opencv-python
 - EL usuario tiene la opcion agregar el URL de la imagen a utilizar.
 
 Diagrama UML:
